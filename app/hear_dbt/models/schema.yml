@@ -1,0 +1,9 @@
+
+version: 2
+
+models:
+  - name: agg_commits_issues_by_month
+    description: "a dbt model that aggregates issues by month"
+  - name: agg_commits_issues_by_user
+    description: "a dbt model that aggregates issues by user"
+

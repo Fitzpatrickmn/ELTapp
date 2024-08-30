@@ -1,0 +1,24 @@
+dbt_sqlite:
+  
+  outputs:
+    main:
+      type: sqlite
+
+      # sqlite locks the whole db on writes so anything > 1 won't help
+      threads: 1
+
+      # value is arbitrary
+      database: ../main.db
+
+      # value of 'schema' must be defined in schema_paths below. in most cases,
+      # this should be 'main'
+      schema: 'main'
+
+      # connect schemas to paths: at least one of these must be 'main'
+      schemas_and_paths:
+        main: '../main.db'
+
+      # directory where all *.db files are attached as schema, using base filename as schema name
+      schema_directory: '../'
+  
+  target: main

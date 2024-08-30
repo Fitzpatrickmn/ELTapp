@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: main
+    tables:
+      - name: users
+      - name: commits
+      - name: issues

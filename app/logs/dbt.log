@@ -1,0 +1,95 @@
+[0m16:29:42.742226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106086390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106085650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f91310>]}
+
+
+============================== 16:29:42.747460 | f1ad6b45-3dfd-4fa4-b43b-4962a6566cd3 ==============================
+[0m16:29:42.747460 [info ] [MainThread]: Running with dbt=1.8.6
+[0m16:29:42.747750 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/fitzpatrickmn/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init hear_dbt', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:29:42.754324 [debug] [MainThread]: Starter project path: /Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m16:29:42.757952 [info ] [MainThread]: 
+Your new dbt project "hear_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:29:42.758169 [info ] [MainThread]: Setting up your profile.
+[0m16:30:29.733276 [error] [MainThread]: Encountered an error:
+cannot import name 'Credentials' from 'dbt.adapters.base' (/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/adapters/base/__init__.py)
+[0m16:30:29.739610 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/task/init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/task/init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/task/init.py", line 173, in create_profile_from_target
+    load_plugin(adapter)
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/adapters/factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/adapters/factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.9_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/adapters/sqlite/__init__.py", line 1, in <module>
+    from dbt.adapters.sqlite.connections import SQLiteConnectionManager
+  File "/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/adapters/sqlite/connections.py", line 10, in <module>
+    from dbt.adapters.base import Credentials
+ImportError: cannot import name 'Credentials' from 'dbt.adapters.base' (/Users/fitzpatrickmn/Desktop/Hear_Assesment/hear_venv/lib/python3.11/site-packages/dbt/adapters/base/__init__.py)
+
+[0m16:30:29.906970 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 47.195263, "process_user_time": 0.737568, "process_kernel_time": 0.164493, "process_mem_max_rss": "99090432", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:30:29.908254 [debug] [MainThread]: Command `dbt init` failed at 16:30:29.908044 after 47.20 seconds
+[0m16:30:29.909232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106104710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106087890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1025cf250>]}
+[0m16:30:29.910033 [debug] [MainThread]: Flushing usage events
+[0m18:00:01.067657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a188d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a28d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a293d0>]}
+
+
+============================== 18:00:01.070811 | 9023e7b3-65e9-4ecd-af8f-846f76e1d391 ==============================
+[0m18:00:01.070811 [info ] [MainThread]: Running with dbt=1.5.5
+[0m18:00:01.071123 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/fitzpatrickmn/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:00:01.071387 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fitzpatrickmn/Desktop/Hear_Assesment/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:00:01.071723 [debug] [MainThread]: Command `dbt run` failed at 18:00:01.071656 after 0.02 seconds
+[0m18:00:01.071878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058a8a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a3f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ed6b90>]}
+[0m18:00:01.072029 [debug] [MainThread]: Flushing usage events
+[0m20:36:51.613614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106370350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106372f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106385610>]}
+
+
+============================== 20:36:51.616420 | 278c58d4-7d81-4e05-a08c-3c335f994f1e ==============================
+[0m20:36:51.616420 [info ] [MainThread]: Running with dbt=1.5.5
+[0m20:36:51.616742 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/fitzpatrickmn/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:36:51.616988 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fitzpatrickmn/Desktop/Hear_Assesment/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:36:51.617302 [debug] [MainThread]: Command `dbt run` failed at 20:36:51.617245 after 0.02 seconds
+[0m20:36:51.617446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106397090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106397790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10282ea50>]}
+[0m20:36:51.617601 [debug] [MainThread]: Flushing usage events

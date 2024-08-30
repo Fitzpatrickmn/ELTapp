@@ -1,0 +1,302 @@
+[
+    {
+        "commit_id": "a3ce6f007597f14029e6b6f54676c34196aa050e",
+        "message": "Merge pull request #6787 from psf/dependabot/github_actions/github/codeql-action-3.26.0\n\nBump github/codeql-action from 3.25.0 to 3.26.0",
+        "url": "https://api.github.com/repos/psf/requests/commits/a3ce6f007597f14029e6b6f54676c34196aa050e",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-08-12T16:54:11Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-08-12T16:54:11Z"
+    },
+    {
+        "commit_id": "877892e67e22e25bd3cb0dec780bf45c0e67026e",
+        "message": "Bump github/codeql-action from 3.25.0 to 3.26.0\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3.25.0 to 3.26.0.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/df5a14dc28094dc936e103b37d749c6628682b60...eb055d739abdc2e8de2e5f4ba1a8b246daa779aa)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "url": "https://api.github.com/repos/psf/requests/commits/877892e67e22e25bd3cb0dec780bf45c0e67026e",
+        "comment_count": 0,
+        "author_id": 49699333,
+        "author_date": "2024-08-12T16:23:16Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-08-12T16:23:16Z"
+    },
+    {
+        "commit_id": "79b74ef704dc0d804937c0d015c5e9c3b02b79bd",
+        "message": "Merge pull request #6757 from nateprewitt/urllib-1.x-tests",
+        "url": "https://api.github.com/repos/psf/requests/commits/79b74ef704dc0d804937c0d015c5e9c3b02b79bd",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-07-30T01:44:13Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-07-30T01:44:13Z"
+    },
+    {
+        "commit_id": "15e1f17bb6f3f978787dd23da0268388148bc3d5",
+        "message": "remove setuptools test command",
+        "url": "https://api.github.com/repos/psf/requests/commits/15e1f17bb6f3f978787dd23da0268388148bc3d5",
+        "comment_count": 0,
+        "author_id": 19800529,
+        "author_date": "2024-07-29T03:49:48Z",
+        "committer_id": 18519037,
+        "commit_date": "2024-07-29T13:49:17Z"
+    },
+    {
+        "commit_id": "01353d3b4afe3afa838f8f5c08e5f30a5b50cb05",
+        "message": "Invert major version check",
+        "url": "https://api.github.com/repos/psf/requests/commits/01353d3b4afe3afa838f8f5c08e5f30a5b50cb05",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-07-23T11:28:03Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-07-23T11:28:03Z"
+    },
+    {
+        "commit_id": "4e383642a9ebb82a67eaeed199d0fbbb31991e3c",
+        "message": "Add conditional string encoding based on urllib3 major version",
+        "url": "https://api.github.com/repos/psf/requests/commits/4e383642a9ebb82a67eaeed199d0fbbb31991e3c",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-07-18T16:43:49Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-07-18T17:20:38Z"
+    },
+    {
+        "commit_id": "f8aa36b92d95e6d2f133489f39f9d5c2412f1bd9",
+        "message": "Test on urllib3 1.26.x",
+        "url": "https://api.github.com/repos/psf/requests/commits/f8aa36b92d95e6d2f133489f39f9d5c2412f1bd9",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-07-02T01:08:04Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-07-02T01:08:04Z"
+    },
+    {
+        "commit_id": "0e322af87745eff34caffe4df68456ebc20d9068",
+        "message": "v2.32.3",
+        "url": "https://api.github.com/repos/psf/requests/commits/0e322af87745eff34caffe4df68456ebc20d9068",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-29T15:36:10Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-29T15:36:10Z"
+    },
+    {
+        "commit_id": "e18879932287c2bf4bcee4ddf6ccb8a69b6fc656",
+        "message": "Don't create default SSLContext if ssl module isn't present (#6724)",
+        "url": "https://api.github.com/repos/psf/requests/commits/e18879932287c2bf4bcee4ddf6ccb8a69b6fc656",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-29T15:23:39Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-29T15:23:39Z"
+    },
+    {
+        "commit_id": "145b5399486b56e00250204f033441f3fdf2f3c9",
+        "message": "Merge pull request #6716 from sigmavirus24/bug/6715",
+        "url": "https://api.github.com/repos/psf/requests/commits/145b5399486b56e00250204f033441f3fdf2f3c9",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-24T21:37:06Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-24T21:37:06Z"
+    },
+    {
+        "commit_id": "b1d73ddb509a3a2d3e10744e85f9cdebdbde90f0",
+        "message": "Don't use default SSLContext with custom poolmanager kwargs",
+        "url": "https://api.github.com/repos/psf/requests/commits/b1d73ddb509a3a2d3e10744e85f9cdebdbde90f0",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-24T16:00:52Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-05-24T18:38:10Z"
+    },
+    {
+        "commit_id": "6badbac6e0d6b5a53872f26401761ad37a9002b8",
+        "message": "Update HISTORY.md",
+        "url": "https://api.github.com/repos/psf/requests/commits/6badbac6e0d6b5a53872f26401761ad37a9002b8",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-22T20:43:57Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-05-24T18:38:06Z"
+    },
+    {
+        "commit_id": "a62a2d35d918baa8e793f7aa4fb41527644dfca5",
+        "message": "Allow for overriding of specific pool key params\n\nThis re-enables the use case of providing a custom SSLContext via a\nTransport Adapter as broken in #6655 and reported in #6715\n\nCloses #6715",
+        "url": "https://api.github.com/repos/psf/requests/commits/a62a2d35d918baa8e793f7aa4fb41527644dfca5",
+        "comment_count": 0,
+        "author_id": 240830,
+        "author_date": "2024-05-22T11:51:48Z",
+        "committer_id": 240830,
+        "commit_date": "2024-05-22T11:53:24Z"
+    },
+    {
+        "commit_id": "88dce9d854797c05d0ff296b70e0430535ef8aaf",
+        "message": "v2.32.2",
+        "url": "https://api.github.com/repos/psf/requests/commits/88dce9d854797c05d0ff296b70e0430535ef8aaf",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-21T18:49:22Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-21T18:49:22Z"
+    },
+    {
+        "commit_id": "c98e4d133ef29c46a9b68cd783087218a8075e05",
+        "message": "Merge pull request #6710 from nateprewitt/api_rename\n\nMove _get_connection to get_connection_with_tls_context",
+        "url": "https://api.github.com/repos/psf/requests/commits/c98e4d133ef29c46a9b68cd783087218a8075e05",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-21T16:41:18Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-21T16:41:18Z"
+    },
+    {
+        "commit_id": "92075b330a30b9883f466a43d3f7566ab849f91b",
+        "message": "Add deprecation warning",
+        "url": "https://api.github.com/repos/psf/requests/commits/92075b330a30b9883f466a43d3f7566ab849f91b",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-21T16:28:30Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-05-21T16:28:30Z"
+    },
+    {
+        "commit_id": "aa1461b68aa73e2f6ec0e78c8853b635c76fd099",
+        "message": "Move _get_connection to get_connection_with_tls_context",
+        "url": "https://api.github.com/repos/psf/requests/commits/aa1461b68aa73e2f6ec0e78c8853b635c76fd099",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-21T12:40:52Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-05-21T12:42:49Z"
+    },
+    {
+        "commit_id": "970e8cec988421bd43da57350723b05c8ce8dc7e",
+        "message": "v2.32.1",
+        "url": "https://api.github.com/repos/psf/requests/commits/970e8cec988421bd43da57350723b05c8ce8dc7e",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-20T22:02:29Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-20T22:02:29Z"
+    },
+    {
+        "commit_id": "d6ebc4a2f1f68b7e355fb7e4dd5ffc0845547f9f",
+        "message": "v2.32.0",
+        "url": "https://api.github.com/repos/psf/requests/commits/d6ebc4a2f1f68b7e355fb7e4dd5ffc0845547f9f",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-20T15:46:49Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-20T15:46:49Z"
+    },
+    {
+        "commit_id": "9a40d1277807f0a4f26c9a37eea8ec90faa8aadc",
+        "message": "Avoid reloading root certificates to improve concurrent performance (#6667)",
+        "url": "https://api.github.com/repos/psf/requests/commits/9a40d1277807f0a4f26c9a37eea8ec90faa8aadc",
+        "comment_count": 0,
+        "author_id": 1207202,
+        "author_date": "2024-05-15T20:07:26Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-15T20:07:26Z"
+    },
+    {
+        "commit_id": "0c030f78d24f29a459dbf39b28b4cc765e2153d7",
+        "message": "Merge pull request #6702 from nateprewitt/no_char_detection\n\nAllow optional char detection dependencies in post-packaging",
+        "url": "https://api.github.com/repos/psf/requests/commits/0c030f78d24f29a459dbf39b28b4cc765e2153d7",
+        "comment_count": 0,
+        "author_id": 240830,
+        "author_date": "2024-05-15T00:15:19Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-15T00:15:19Z"
+    },
+    {
+        "commit_id": "555b870eb19d497ddb67042645420083ec8efb02",
+        "message": "Allow character detection dependencies to be optional in post-packaging steps",
+        "url": "https://api.github.com/repos/psf/requests/commits/555b870eb19d497ddb67042645420083ec8efb02",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-05-14T21:59:26Z",
+        "committer_id": 5271761,
+        "commit_date": "2024-05-14T22:26:04Z"
+    },
+    {
+        "commit_id": "d6dded3f00afcf56a7e866cb0732799045301eb0",
+        "message": "Merge pull request #6700 from franekmagiera/update-redirect-to-invalid-uri-test\n\nUse an invalid URI that will not cause httpbin to throw 500",
+        "url": "https://api.github.com/repos/psf/requests/commits/d6dded3f00afcf56a7e866cb0732799045301eb0",
+        "comment_count": 0,
+        "author_id": 240830,
+        "author_date": "2024-05-12T21:33:47Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-05-12T21:33:47Z"
+    },
+    {
+        "commit_id": "bf24b7d8d17da34be720c19e5978b2d3bf94a53b",
+        "message": "Use an invalid URI that will not cause httpbin to throw 500",
+        "url": "https://api.github.com/repos/psf/requests/commits/bf24b7d8d17da34be720c19e5978b2d3bf94a53b",
+        "comment_count": 0,
+        "author_id": 36968154,
+        "author_date": "2024-05-12T20:08:24Z",
+        "committer_id": 36968154,
+        "commit_date": "2024-05-12T20:08:24Z"
+    },
+    {
+        "commit_id": "2d5f54779ad174035c5437b3b3c1146b0eaf60fe",
+        "message": "Pin 3.8 and 3.9 runners back to macos-13 (#6688)",
+        "url": "https://api.github.com/repos/psf/requests/commits/2d5f54779ad174035c5437b3b3c1146b0eaf60fe",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-04-23T17:50:19Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-04-23T17:50:19Z"
+    },
+    {
+        "commit_id": "f1bb07d39b74d6444e333879f8b8a3d9dd4d2311",
+        "message": "Merge pull request #6687 from psf/dependabot/github_actions/github/codeql-action-3.25.0\n\nBump github/codeql-action from 3.24.0 to 3.25.0",
+        "url": "https://api.github.com/repos/psf/requests/commits/f1bb07d39b74d6444e333879f8b8a3d9dd4d2311",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-04-15T17:01:39Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-04-15T17:01:39Z"
+    },
+    {
+        "commit_id": "60047ade64b0b882cbc94e047198818ab580911e",
+        "message": "Bump github/codeql-action from 3.24.0 to 3.25.0\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3.24.0 to 3.25.0.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/e8893c57a1f3a2b659b6b55564fdfdbbd2982911...df5a14dc28094dc936e103b37d749c6628682b60)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+        "url": "https://api.github.com/repos/psf/requests/commits/60047ade64b0b882cbc94e047198818ab580911e",
+        "comment_count": 0,
+        "author_id": 49699333,
+        "author_date": "2024-04-15T16:40:35Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-04-15T16:40:35Z"
+    },
+    {
+        "commit_id": "31ebb8102c00f8cf8b396a6356743cca4362e07b",
+        "message": "Merge pull request #6682 from frenzymadness/pytest8\n\nFix compatibility with pytest 8",
+        "url": "https://api.github.com/repos/psf/requests/commits/31ebb8102c00f8cf8b396a6356743cca4362e07b",
+        "comment_count": 0,
+        "author_id": 240830,
+        "author_date": "2024-04-11T19:49:35Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-04-11T19:49:35Z"
+    },
+    {
+        "commit_id": "cc23d1c6445d61c1e6905cae4861d6e3c3244274",
+        "message": "Fix compatibility with pytest 8\n\n`pytest.warns(None)` has been deprecated in pytest 7.0.0\nand it's no longer working in pytest 8.\n\nResolves: https://github.com/psf/requests/issues/6679",
+        "url": "https://api.github.com/repos/psf/requests/commits/cc23d1c6445d61c1e6905cae4861d6e3c3244274",
+        "comment_count": 0,
+        "author_id": 5688939,
+        "author_date": "2024-04-11T19:10:36Z",
+        "committer_id": 5688939,
+        "commit_date": "2024-04-11T19:10:36Z"
+    },
+    {
+        "commit_id": "0790ea4250bce844734f625a1a8b37d5581fd8cd",
+        "message": "Merge pull request #6680 from mbeijen/rfc9110\n\nAdd rfc9110 HTTP status code names",
+        "url": "https://api.github.com/repos/psf/requests/commits/0790ea4250bce844734f625a1a8b37d5581fd8cd",
+        "comment_count": 0,
+        "author_id": 5271761,
+        "author_date": "2024-04-11T14:10:57Z",
+        "committer_id": 19864447,
+        "commit_date": "2024-04-11T14:10:57Z"
+    }
+]

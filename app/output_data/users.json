@@ -1,0 +1,56 @@
+[
+    {
+        "user_id": 5271761,
+        "user_name": "Nate Prewitt",
+        "user_login": "nateprewitt",
+        "user_email": "nate.prewitt@gmail.com"
+    },
+    {
+        "user_id": 19864447,
+        "user_name": "GitHub",
+        "user_login": "web-flow",
+        "user_email": "noreply@github.com"
+    },
+    {
+        "user_id": 49699333,
+        "user_name": "dependabot[bot]",
+        "user_login": "dependabot[bot]",
+        "user_email": "49699333+dependabot[bot]@users.noreply.github.com"
+    },
+    {
+        "user_id": 19800529,
+        "user_name": "Branch Vincent",
+        "user_login": "branchvincent",
+        "user_email": "branchevincent@gmail.com"
+    },
+    {
+        "user_id": 18519037,
+        "user_name": "Seth Michael Larson",
+        "user_login": "sethmlarson",
+        "user_email": "sethmichaellarson@gmail.com"
+    },
+    {
+        "user_id": 240830,
+        "user_name": "Ian Stapleton Cordasco",
+        "user_login": "sigmavirus24",
+        "user_email": "graffatcolmingov@gmail.com"
+    },
+    {
+        "user_id": 1207202,
+        "user_name": "agubelu",
+        "user_login": "agubelu",
+        "user_email": "agubelu@users.noreply.github.com"
+    },
+    {
+        "user_id": 36968154,
+        "user_name": "franekmagiera",
+        "user_login": "franekmagiera",
+        "user_email": "framagie@gmail.com"
+    },
+    {
+        "user_id": 5688939,
+        "user_name": "Lumir Balhar",
+        "user_login": "frenzymadness",
+        "user_email": "lbalhar@redhat.com"
+    }
+]

@@ -13,3 +13,10 @@ cd app/hear_dbt
 # Run dbt
 dbt debug
 dbt run
+
+# cd into the app directory
+cd .. 
+
+# Print list of tables under main and main_dbt
+python3 query_data/query_main.py
+python3 query_data/query_main_dbt.py

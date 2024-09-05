@@ -1,6 +1,5 @@
 # Extract Data from the API
-python3 app/extract_data/download_commits_data.py
-python3 app/extract_data/download_issues_data.py
+python3 app/extract_data/main.py
 
 # Load the Extracted Data into a SQLite Database
 python3 app/load_data/load_commits.py

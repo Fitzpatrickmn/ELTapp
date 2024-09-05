@@ -23,7 +23,7 @@ def main():
         # Write issue data to a JSON file
         write_json_file("issues.json", issue_data)
 
-    print("### Main Data Extraction Split Ran Successfully ###")
+    print("### Main Data Extraction Script Ran Successfully ###")
 
 if __name__ == "__main__":
     main()

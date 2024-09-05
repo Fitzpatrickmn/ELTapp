@@ -1,18 +1,12 @@
-import sqlite3
-import json
+# load_issues.py
+
+from db_utils import load_json_data, connect_to_db, create_table, insert_data, query_data, close_connection
 
 # Load JSON data
-with open('app/output_data/issues.json', 'r') as file:
-    data = json.load(file)
+data = load_json_data('app/output_data/issues.json')
 
-# Connect to SQLite
-conn = sqlite3.connect('main.db')
-cursor = conn.cursor()
-
-cursor.execute('DROP TABLE IF EXISTS issues')
-
-# Create table 
-cursor.execute('''
+# SQL statements
+create_issues_table_sql = '''
     CREATE TABLE IF NOT EXISTS issues (
         issue_id INTEGER PRIMARY KEY, 
         user_id INTEGER,
@@ -26,28 +20,34 @@ cursor.execute('''
         comments INTEGER, 
         reactions INTEGER
     )
-''')
+'''
+
+insert_issues_sql = '''
+    INSERT INTO issues (issue_id, user_id, issue_number, title, state, created_at, updated_at, closed_at, url, comments, reactions)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+'''
+
+query_issues_sql = 'SELECT COUNT(issue_id), COUNT(DISTINCT issue_id) FROM issues'
+
+# Connect to SQLite and create table
+conn, cursor = connect_to_db('main.db')
+cursor.execute('DROP TABLE IF EXISTS issues')
+create_table(cursor, create_issues_table_sql)
 
 # Insert data into the table
-for entry in data:
-    cursor.execute('''
-        INSERT INTO issues (issue_id, user_id, issue_number, title, state, created_at, updated_at, closed_at, url, comments, reactions)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', (entry['issue_id'], entry['user_id'], entry['issue_number'], entry['title'], entry['state'], entry['created_at'], entry['updated_at'], entry['closed_at'], entry['url'], entry['comments'], entry['reactions']))
+insert_data(cursor, insert_issues_sql, [
+    (
+        entry['issue_id'], entry['user_id'], entry['issue_number'], entry['title'], 
+        entry['state'], entry['created_at'], entry['updated_at'], entry['closed_at'], 
+        entry['url'], entry['comments'], entry['reactions']
+    )
+    for entry in data
+])
 
-# Commit and close
-conn.commit()
-
-# Query the data
-cursor.execute('SELECT COUNT(issue_id), COUNT (DISTINCT issue_id) FROM issues')
-rows = cursor.fetchall()
-
-conn.close()
+# Query and print results
+rows = query_data(cursor, query_issues_sql)
+close_connection(conn)
 
 total_issues, unique_issues = rows[0]
 
 print(f"### load_issues.py executed successfully. {total_issues} issues were loaded into the table, with {unique_issues} unique ids. ###")
-
-
-
-

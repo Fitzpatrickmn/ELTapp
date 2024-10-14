@@ -1,4 +1,4 @@
-# Data Ingestion
+# ELT Application
 
 This is a dockerized Python application that uses the requests library to extract data related to commits and issues. This data is then loaded into a SQLite database, upon which dbt is used for simple data transformations, such as aggregating the number of commits and issues by month and by user. 
 
